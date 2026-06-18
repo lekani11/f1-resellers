@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dis hair salon">
+    <meta name="author" content="Nonani Hlaulekani Shivambu">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <link rel="stylesheet" href="g.css">
+    <script src="i.js" defer></script>
+    <title>
+        About Us
+    </title>
+</head>
+<center><body>
+    <header>
+        <img src="images/logoT.PNG" style="width: 200px; height: 100px;">
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            
+            
+        </nav>
+    </header>
+    <main>
+        <h1><u>F1 resallers</u></h1>
+        <h3>F1 Resellers has been providing affordable, unique fashion and vintage gems since 2000</h3>
+        <p>We pride ourselves in giving new life to pre-loved fashion and goods by offering affordable, high-quality thrifted items while promoting sustainability, individuality, and community.</p>
+    
+        seeing that this is my mission statement , vision statement and target audience for a website write an about us section and the following is what i have written to this far
+<br>
+        
+    </main>
+    <footer>  &copy;2026 F1 Resellers; Premium Formula 1 apparel and collectibles for passionate motorsport fans across South Africa
+        <p id="datetime"></p></footer>
+    
+<script>
+/* =========================
+   LIVE DATE & TIME
+========================= */
+
+function updateDateTime() {
+    const now = new Date();
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    const el = document.getElementById("datetime");
+
+    if (el) {
+        el.textContent = now.toLocaleDateString('en-US', options);
+    }
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</center>
+</html>

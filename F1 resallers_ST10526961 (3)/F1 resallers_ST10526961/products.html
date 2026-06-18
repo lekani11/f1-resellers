@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dis hair salon">
+    <meta name="author" content="Nonani Hlaulekani Shivambu">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <link rel="stylesheet" href="g.css">
+ <script src="i.js" defer></script>
+    <title>Products</title>
+    
+</head>
+<center>
+    <body>
+    <header>
+        <img src="images/logoT.PNG" style="width: 200px; height: 100px;">
+        <nav>
+           <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            
+        </nav>
+    </header>
+    <main>
+       <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            
+            <div class="product-card">
+                <img src="images/IMG_8296.jpeg" alt="F1 Merch Jacket">
+                <h3>F1 Jacket</h3>
+                <p>Black F1 racing jacket.</p>
+                <p class="price">R250</p>
+                <button>Buy Now</button>
+            </div>
+
+           <br>
+            <div class="product-card">
+                <img src="images/IMG_8279.PNG" alt="Ferrari shirt">
+                <h3>2025 Ferrari Shirt</h3>
+                <p>Official team shirt, lightly used.</p>
+                <p class="price">R450</p>
+                <button>Buy Now</button>
+            </div>
+
+            <br>
+            <div class="product-card">
+                <img src="images/IMG_8315.jpeg" alt="Audi Sneaker">
+                <h3>Audi Sneaker by <i> adidas</i></h3>
+                <p>Stylish Sneakers.</p>
+                <p class="price">R350</p>
+                <button>Buy Now</button>
+            </div>
+
+            <br>
+            <div class="product-card">
+                <img src="images/IMG_8319.jpeg" alt="F1 Poster">
+                <h3>Mclaren Jacket</h3>
+                <p>Comfortable and stylish Jacket.</p>
+                <p class="price">R550</p>
+                <button>Buy Now</button>
+            </div>
+
+            <br>
+            <div class="product-card">
+                <img src="images/701233034001_pp_01_astonmartinf1.jpeg" alt="F1 Poster">
+                <h3>2025 <i>Fernado Alonso</i> Special Aston Martin Team Shirt</h3>
+                <p>Rare collectible Shirt.</p>
+                <p class="price">R550</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <br> 
+
+    </main>
+    <footer>   &copy;2026 F1 Resellers; Premium Formula 1 apparel and collectibles for passionate motorsport fans across South Africa
+        <p id="datetime"></p>
+    </footer>
+    
+<script>
+/* =========================
+   LIVE DATE & TIME
+========================= */
+
+function updateDateTime() {
+    const now = new Date();
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    const el = document.getElementById("datetime");
+
+    if (el) {
+        el.textContent = now.toLocaleDateString('en-US', options);
+    }
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</center>
+</html>

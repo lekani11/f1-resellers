@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dis hair salon">
+    <meta name="author" content="Nonani Hlaulekani Shivambu">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <link rel="stylesheet" href="g.css">
+     <script src="i.js" defer></script>
+    <title>Gallery</title>
+</head>
+
+    <body>
+    <header>
+        <img src="images/logoT.PNG" style="width: 200px; height: 100px;">
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>       
+        </nav>
+    </header>
+    <main>
+        <h1>Gallery</h1>
+        <img src="images/701233034001_pp_01_astonmartinf1.jpeg" style="width:100px; height:100px;">
+        <img src="images/IMG_8279.PNG" style="width:100px; height:100px;">
+        <img src="images/IMG_8315.jpeg" style="width:100px; height:100px;">
+        <img src="images/IMG_8319.jpeg" style="width:100px; height:100px;">
+        <img src="images/IMG_8313.jpeg" style="width:100px; height:100px;">
+    </main>
+    <footer>  &copy;2026 F1 Resellers; Premium Formula 1 apparel and collectibles for passionate motorsport fans across South Africa
+        <p id="datetime"></p></footer>
+    
+<script>
+/* =========================
+   LIVE DATE & TIME
+========================= */
+
+function updateDateTime() {
+    const now = new Date();
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    const el = document.getElementById("datetime");
+
+    if (el) {
+        el.textContent = now.toLocaleDateString('en-US', options);
+    }
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
